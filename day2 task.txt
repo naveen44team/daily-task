@@ -1,0 +1,47 @@
+      DAY2 TASK:
+1.List 5 difference between  browser JS  vs  Nodejs
+                    BROWSER JS:
+ (i)."window" is a p[redefined global object which has functions and attributes,that have to deal with window that has been drawn.
+(ii)."location" is another predefined object in browsers,that has all the information about  the url we have loaded.
+(iii)."document",which is also another predefined global variable in browsers,has the hyml which is rendered.
+(iv).Browsers may have an object named "global",but it will be the exact one as"window".
+(v).Browsers don't have "require" predefined.You may include it in your app for asynchronous file loading.
+     
+                NODE JS:
+(i).Node doesn't have a predefined "window" object cause it doesn't have a window to draw anything.
+(ii)."location" object is related to a particular url;that means it is for page specific.so,node doesn't require that.
+(iii).Ofcourse node doesn't have "document"  object also,cause it never have to render anything in a page.
+(iv).Node has "global",which is a predefined global object.It contains several functions that are not available in browsers,cause they are needed for
+      server side wirks only.
+(v)."require" object is predefined in Node which is used to include modules in the app
+
+
+2.Watch and summary 5 points:
+1.PARSING HTML =
+  *html is a forgiving by nature.
+  *parsing isn't straight forward.
+   *can behalted.
+2.Speculative parsing:
+*will look ahead.
+*external images,scripts.
+3.Reentrant
+*means  the parsing process can be intruptted
+4.<script/>:at the bottom
+*parse uninterrupted
+*faster to render.
+*trade off
+5.DOM node to render object
+*visual output
+*can layout and paint.
+
+
+
+3.typeof(1)-number
+typeof(1.1)-number
+typeof('1.1')-string
+typeof(true)-boolean
+typeof(null)-object
+typeof(undefined)-undefined
+tyoeof([])-object
+typeof({})-object
+typeof(Nan)-number
